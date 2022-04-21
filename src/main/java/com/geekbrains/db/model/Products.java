@@ -1,8 +1,10 @@
 package com.geekbrains.db.model;
 
+import lombok.NoArgsConstructor;
 import lombok.ToString;
 
 @ToString
+@NoArgsConstructor
 public class Products {
     /**
      *
@@ -134,6 +136,12 @@ public class Products {
      * @mbg.generated Tue Apr 19 15:21:29 MSK 2022
      */
     public void setCategoryId(Long categoryId) {
+        this.categoryId = categoryId;
+    }
+
+    public Products(String title, Integer price, Long categoryId) {
+        this.title = title;
+        this.price = price;
         this.categoryId = categoryId;
     }
 }

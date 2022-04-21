@@ -58,6 +58,10 @@ public class CreateProductTests {
 
     }
 
+
+
+
+
     @DisplayName("Создать новый продукт(Негативный тест)")
     @SneakyThrows
     @Test
